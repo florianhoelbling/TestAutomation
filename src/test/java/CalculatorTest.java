@@ -31,11 +31,13 @@ class CalculatorTest {
 
     @org.junit.jupiter.api.Test
     void multiply() {
-
+        Assertions.assertEquals(4, calculator.multiply(2, 2));
+        Assertions.assertEquals(6, calculator.multiply(2, 3));
     }
 
     @org.junit.jupiter.api.Test
     void divide() {
+
     }
 
     @org.junit.jupiter.api.Test
