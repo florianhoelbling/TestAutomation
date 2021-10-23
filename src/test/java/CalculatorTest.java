@@ -1,12 +1,19 @@
 import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.BeforeEach;
 
 import static org.junit.jupiter.api.Assertions.*;
 
 class CalculatorTest {
 
+    Calculator calculator;
+
+    @BeforeEach
+    void setUp() {
+        calculator = new Calculator();
+    }
+
     @org.junit.jupiter.api.Test
     void add() {
-        Calculator calculator = new Calculator();
         int a = 1;
         int b = 2;
         final double result = calculator.add(a, b);
@@ -15,7 +22,6 @@ class CalculatorTest {
 
     @org.junit.jupiter.api.Test
     void subtract() {
-        final Calculator calculator = new Calculator();
         int a = 2;
         int b = 3;
         //final double subtract = calculator.subtract(b, a);
@@ -25,6 +31,7 @@ class CalculatorTest {
 
     @org.junit.jupiter.api.Test
     void multiply() {
+
     }
 
     @org.junit.jupiter.api.Test
